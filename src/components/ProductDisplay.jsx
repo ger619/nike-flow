@@ -10,11 +10,10 @@ const ProductDisplay = (props) => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 my-20 md:gap-10 px-6 md:px-0'>
             <div className='flex md:1/2 gap-4'>
-                <div className='flex flex-col gap-4 md:h-[500px]'>
-                    <img onClick={() => setMainImage(product.image)} src={product.image} alt="" className='md:h-[163px] h-[75px] md:w-[100px] w-[120px]' />
-                    <img onClick={() => setMainImage(product.image1)} src={product.image1} alt="" className='md:h-[163px] h-[75px] md:w-[100px] w-[120px]' />
-                    <img onClick={() => setMainImage(product.image2)} src={product.image2} alt="" className='md:h-[163px] h-[75px] md:w-[100px] w-[120px]' />
-                    <img onClick={() => setMainImage(product.image3)} src={product.image3} alt="" className='md:h-[163px] h-[75px] md:w-[100px] w-[120px]' />
+                <div className='flex flex-col gap-4 md:h-[580px]'>
+                    <img onClick={() => setMainImage(product.image)} src={product.image} alt="" className='md:h-[200px] h-[80px] md:w-[100px] w-[120px]' />
+                    <img onClick={() => setMainImage(product.image1)} src={product.image1} alt="" className='md:h-[200px] h-[85px] md:w-[100px] w-[120px]' />
+                    <img onClick={() => setMainImage(product.image2)} src={product.image2} alt="" className='md:h-[200px] h-[85px] md:w-[100px] w-[120px]' />
                 </div>
                 <div>
                     <img src={mainImage} alt="" className='md:h-[580px] md:w-[480px] w-[600px]' />
