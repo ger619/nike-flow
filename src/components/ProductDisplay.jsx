@@ -4,15 +4,20 @@ import { Star } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const ProductDisplay = (props) => {
+    // eslint-disable-next-line react/prop-types
     const { product } = props
     const { addToCart } = useContext(ShopContext)
+    // eslint-disable-next-line react/prop-types
     const [mainImage, setMainImage] = useState(product.image)
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 my-20 md:gap-10 px-6 md:px-0'>
             <div className='flex md:1/2 gap-4'>
                 <div className='flex flex-col gap-4 md:h-[580px]'>
-                    <img onClick={() => setMainImage(product.image)} src={product.image} alt="" className='md:h-[200px] h-[80px] md:w-[100px] w-[120px]' />
+                    {/* eslint-disable-next-line react/prop-types */}
+                    <img onClick={() => setMainImage(product.image)} src={product.image} alt="" className='md:h-[200px] h-[85px] md:w-[100px] w-[120px]' />
+                    {/* eslint-disable-next-line react/prop-types */}
                     <img onClick={() => setMainImage(product.image1)} src={product.image1} alt="" className='md:h-[200px] h-[85px] md:w-[100px] w-[120px]' />
+                    {/* eslint-disable-next-line react/prop-types */}
                     <img onClick={() => setMainImage(product.image2)} src={product.image2} alt="" className='md:h-[200px] h-[85px] md:w-[100px] w-[120px]' />
                 </div>
                 <div>
